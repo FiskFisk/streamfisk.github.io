@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Size Setting</title>
+    <link rel="stylesheet" href="ProfilbildeSettings.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="VidoeSideStyle.css">
+    <link rel="stylesheet" href="Contents.css">
+    <link rel="stylesheet" href="ColorSettings.css">
+    <link rel="stylesheet" href="TextSIzeSetting.css">
+</head>
+
+<body class="Color1 TSSbody">
+
+
+    <div class="SideMenu SideMenuBorder SideMenuC">
+        <div class="SideMenuContents">
+            <a href="VideoSide.html">
+                <button class="SideMenuButton FinishSideMenuButton"> Finish</button>
+            </a>
+            <a a href="ProfilbildeSettings.html">
+                <button class="SideMenuButton"> Profile Picture </button>
+            </a>
+            <a href="ColorSettings.html">
+                <button class="SideMenuButton"> Color Change</button>
+            </a>
+            <a>
+                <button class="SideMenuButton"> Text Size</button>
+            </a>
+        </div>
+    </div>
+    <div class="TSSSettingbody">
+        <div class="slideshow-container">
+            <div class="TextSizeInformation">
+                <p class="ColorSwitchingInformationText">Text Size</p>
+            </div>
+
+            <div class="font-size-buttons">
+                <button onclick="setFontSize('small')" class="TSSButton"><p class="TextSize1">Small</p></button>
+                <button onclick="setFontSize('medium')" class="TSSButton"><p class="TextSize2">Medium</p></button>
+                <button onclick="setFontSize('large')" class="TSSButton"><p class="TextSize3">Large</p></button>
+            </div>
+            <div class="TextSizeShow">
+                <div class="TSSMovie_box">
+                    <div class="TSSInformasjon"><b>Test Text</b>
+                        <a target="_blank">
+                            <button class="PlayButton"></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="TSSMovie_box">
+                    <div class="TSSInformasjon"><b>Test Text</b>
+                        <a target="_blank">
+                            <button class="PlayButton"></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="TSSMovie_box">
+                    <div class="TSSInformasjon"><b>Test Text</b>
+                        <a target="_blank">
+                            <button class="PlayButton"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="ProfilbildeSettings.js"></script>
+
+</body>
+<script src="TextSizeSetting.js"></script>
+<script src="ColorSwtich.js"></script>
+
+</html>

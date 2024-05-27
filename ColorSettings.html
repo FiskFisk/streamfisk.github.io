@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+    <style>
+        .TurnBlack{background-color: #2c2c2c;}
+        .TurnWhite{background-color: #e4e4e4;}
+
+        .TurnBlue{background-color: #0052bd;}
+        .TurnRed{background-color: #bb1300;}
+        .TurnGreen{background-color: #13b900;}
+        .TurnYellow{background-color: #cfc500;}
+
+        .SideMenuDark{background-color: #2c2c2c;}
+        .SideMenuLight{background-color: #e4e4e4;}
+        .SideMenuColor{background: linear-gradient(
+                90deg,
+                red 25%,
+                blue 25%,
+                blue 50%,
+                green 50%,
+                green 75%,
+                yellow 75%
+            );
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="VidoeSideStyle.css">
+    <link rel="stylesheet" href="Contents.css">
+    <link rel="stylesheet" href="ColorSettings.css">
+</head>
+
+<body class="Color1 CSBody">
+
+    
+    <div class="SideMenu SideMenuBorder SideMenuC">
+        <div class="SideMenuContents">
+            <a href="VideoSide.html">
+                <button class="SideMenuButton FinishSideMenuButton"> Finish</button>
+            </a>
+            <a href="ProfilbildeSettings.html">
+                <button class="SideMenuButton"> Profile Picture </button>
+            </a>
+            <a>
+                <button class="SideMenuButton"> Color Change</button>
+            </a>
+            <a href="TextSizeSetting.html">
+                <button class="SideMenuButton"> Text Size</button>
+            </a>
+        </div>  
+    </div>
+    <div class="CSButtons">
+        <div class="ButtonsStorage">
+            <div class="ColorSwitchingInformation">
+                <p class="ColorSwitchingInformationText">Color Change</p>
+            </div>
+            <div class="BlackWhite">
+                <button onclick="TurnBlack()" class="ColorSwitchButtons TurnBlack">Dark Mode</button>
+                <button onclick="TurnWhite()" class="ColorSwitchButtons TurnWhite">Light Mode</button>
+            </div>
+            <div class="Colors">
+                <button onclick="TurnBlue()" class="ColorSwitchButtons TurnBlue">Turn Blue</button>
+                <button onclick="TurnRed()" class="ColorSwitchButtons TurnRed">Turn Red</button>
+                <button onclick="TurnGreen()" class="ColorSwitchButtons TurnGreen">Turn Green</button>
+                <button onclick="TurnYellow()" class="ColorSwitchButtons TurnYellow">Turn Yellow</button>
+            </div>
+            <div class="SMColorSwitchingInformation">
+                <p class="SMColorSwitchingInformationText">Side Menu Color Change</p>
+            </div>
+            <div class="Colors">
+                <button onclick="setSideMenuDark()" class="ColorSwitchButtons SideMenuDark">Side Menu Dark</button>
+                <button onclick="setSideMenuLight()" class="ColorSwitchButtons SideMenuLight">Side Menu Light</button>
+                <button onclick="setSideMenuColor()" class="ColorSwitchButtons SideMenuColor">Side Menu Colour</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="Series_Logo"></div>
+    <div class="Movies_Logo"></div>
+    <div class="Favorites_Logo"></div>
+</body>
+<script src="ColorSwtich.js"></script>
+
+</html>

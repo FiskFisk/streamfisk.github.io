@@ -1,0 +1,109 @@
+.CSBody{
+    display: flex;
+}
+
+.Color1 {
+    background-color: var(--main-b1-color);
+}
+
+.Color2 {
+    background-color: var(--main-b2-color);
+}
+
+.SideMenuC {
+    background-color: var(--side-menu-color);
+}
+
+.SideMenuBorder {
+    border-right: 5px solid;
+    border-color: var(--side-menu-border-color);
+}
+
+
+.Series_Logo {}
+
+
+.Movies_Logo {}
+
+
+.Favorites_Logo {}
+
+.SideMenu {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 130vh;
+}
+
+.ButtonsStorage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    margin-left: 30%;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.ColorSwitchButtons {
+    width: 250px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 10%;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 15px #000000, 0 0 15px #000000;
+    cursor: pointer;
+}
+
+.Colors {
+    display: flex;
+    gap: 3%;
+}
+
+.BlackWhite {
+    display: flex;
+    gap: 6%;
+}
+
+
+.ColorSwitchingInformationText {
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 15px #000000, 0 0 15px #000000;
+}
+
+.SMColorSwitchingInformationText {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 15px #000000, 0 0 15px #000000;
+}
+
+.SideMenuContents{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 40%;
+    gap: 60px;
+}
+
+.SideMenuButton{
+    width: 90%;
+    height: 75px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: solid black 5px;
+    cursor: pointer;
+}
+
+.FinishSideMenuButton{
+    margin-bottom: 50%;
+}
+
+@media screen and (min-width: 2200px) {
+
+    .CSButtons {
+        margin-left: 20%;
+    }
+
+}

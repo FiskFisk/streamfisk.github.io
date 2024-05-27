@@ -1,0 +1,53 @@
+.U-TurnMovie {
+    background-image: url(Resusjer/Video_image/U-Turn.png);
+}
+
+.The_Way_To_Destiny{
+    background-image: url(Resusjer/Video_image/The_Way_To_Destiny_Movie.png);
+}
+
+.Winky_Tinkie_TalkShow_Series{
+    background-image: url(Resusjer/Video_image/Winky_Tinkie_TalkShow.png);
+}
+
+.Hunted_Movie{
+    background-image: url(Resusjer/Video_image/Hunted.png);
+}
+
+.MEPHIS_Way{
+    background-image: url(Resusjer/Video_image/MEMPHIS_Way.png);
+}
+
+.Cola_Movie{
+    background-image: url(Resusjer/Video_image/Cola.png);
+}
+
+.News_Series{
+    background-image: url(Resusjer/Video_image/News.png);
+}
+
+.Emty_Video{
+    background-image: url(Resusjer/Video_image/Emty_Video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dokementasjon */
+
+.Rose_Dokementasjon{
+    background-image: url(Resusjer/Video_image/Dokementasjon/Rose\ Dokemenatsjon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Sofus_Dokementasjon{
+    background-image: url(Resusjer/Video_image/Dokementasjon/Sofus\ Dokementasjon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Sander_Dokementasjon{
+    background-image: url(Resusjer/Video_image/Dokementasjon/Sander\ Dokementasjon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

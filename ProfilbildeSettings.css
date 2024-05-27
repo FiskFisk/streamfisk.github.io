@@ -1,0 +1,67 @@
+.PBSettingbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 15%;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.ProfilePicture_Settings {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border: 5px solid #000000;
+    border-radius: 100%;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 5px solid #000000;
+    padding: 10px;
+}
+
+#button-container::-webkit-scrollbar {
+    display: none;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-button {
+    padding: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    width: 500px; /* Set the width */
+    height: 150px; /* Set the height */
+    border-radius: 100%;
+}
+
+.PbSBody{
+    display: flex;
+}
+
+.PbSideMenu {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 110vh;
+}

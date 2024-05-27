@@ -1,0 +1,423 @@
+/*Most Popular (MS) */
+
+
+
+.Color1 {
+    background-color: var(--main-b1-color);
+}
+
+.Color2{
+    background-color: var(--main-b2-color);
+}
+
+
+
+
+.slider-container {
+    position: relative;
+    margin-bottom: 4%;
+
+}
+
+.MP_slider {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 0.27%;
+}
+
+.RS_Movie_box,
+.LS_Movie_box,
+.Movie_box {
+    flex: 0 0 auto;
+    width: 340px;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: 0.25s;
+    box-shadow: 1.5px 0px 30px 0px rgba(0, 0, 0, 0.88);
+}
+
+
+.LS_Movie_box {
+    margin-left: 75px;
+}
+
+.Movie_box p {
+    position: absolute;
+}
+
+.Movie_box:hover {
+    transform: scale(1.25);
+
+    .Informasjon {
+        opacity: 100;
+    }
+}
+
+.RS_Movie_box:hover {
+    transform: scale(1.25) translate(-43px);
+
+    .Informasjon {
+        opacity: 100;
+    }
+}
+
+.LS_Movie_box:hover {
+    transform: scale(1.25) translate(43px);
+
+    .Informasjon {
+        opacity: 100;
+    }
+}
+
+.MPprev,
+.MPnext {
+    position: absolute;
+    top: 407px;
+    transform: translateY(-156%);
+    background-color: #292929;
+    opacity: 50%;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    padding-top: 85px;
+    padding-bottom: 70px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+
+.MPprev {
+    left: 10px;
+    /* Position the "prev" button on the left side */
+}
+
+.MPnext {
+    right: 10px;
+    /* Position the "next" button on the right side */
+}
+
+.Act_prev:hover,
+.Hitsprev:hover,
+.MPprev:hover {
+    opacity: 80%;
+}
+
+.Act_next:hover,
+.Hitsnext:hover,
+.MPnext:hover {
+    opacity: 80%;
+}
+
+.Chategori_Text {
+    color: white;
+    margin-left: 1%;
+    font-size: 30px;
+}
+
+.Informasjon {
+    opacity: 0;
+    margin-top: 125px;
+    width: 100%;
+    height: 65px;
+    background-color: var(--side-menu-color);  
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.5s;
+    box-shadow: -1.5px -5px 50px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: 'Chartoon', Courier, monospace, font-serif;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Informasjon p {
+    font-size: 12.5px;
+}
+
+.Informasjon b {
+    font-size: 22.5px;
+    margin: 2.5px;
+}
+
+.PlayButton {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url(Resusjer/Images/PlayButton.svg);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+
+
+/*Documentaries (hits) */
+
+.Hits_Chategori_Text {
+    color: white;
+    margin-left: 1%;
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+.Hits-slider-container {
+    position: relative;
+    margin-bottom: 4%;
+
+}
+
+.Hits_slider {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 0.27%;
+}
+
+.Hitsprev,
+.Hitsnext {
+    position: absolute;
+    top: 370px;
+    transform: translateY(-50%);
+    background-color: #292929;
+    opacity: 50%;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.Hitsprev {
+    left: 10px;
+    /* Position the "prev" button on the left side */
+}
+
+.Hitsnext {
+    right: 10px;
+    /* Position the "next" button on the right side */
+}
+
+.Hits_Movie_box {
+    flex: 0 0 auto;
+    width: 990px;
+    height: 600px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 20px 0px 0px 20px;
+    transition: 0.25s;
+    margin-left: 1%;
+    margin-left: 75px;
+    box-shadow: 1.5px 0px 30px 0px rgba(0, 0, 0, 0.88);
+    cursor: pointer;
+}
+
+.Hits_Informasjon {
+    opacity: 100;
+    width: 400px;
+    height: 100%;
+    background-color: var(--side-menu-color);
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.5s;
+    box-shadow: -1.5px -5px 50px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: 'Chartoon', Courier, monospace, font-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.Hits_BigBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.Hits_Informasjon b {
+    font-size: 75px;
+    margin: 10px;
+}
+
+.Hits_PlayButton {
+    width: 382px;
+    height: 133px;
+    margin-left: 10px;
+    background-image: url(Resusjer/Images/BigPlayButton.svg);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 40%;
+}
+
+
+
+/*Action (Act)*/
+
+.Act_slider {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 0.27%;
+}
+
+.Act_prev {
+    left: 10px;
+    /* Position the "prev" button on the left side */
+}
+
+.Act_next {
+    right: 10px;
+    /* Position the "next" button on the right side */
+}
+
+
+.Act_prev,
+.Act_next {
+    position: absolute;
+    top: 702px;
+    transform: translateY(-156%);
+    background-color: #292929;
+    opacity: 50%;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    padding-top: 85px;
+    padding-bottom: 70px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 10px
+}
+
+
+
+.Act_prev {
+    left: 10px;
+    /* Position the "prev" button on the left side */
+}
+
+.Act_next {
+    right: 10px;
+    /* Position the "next" button on the right side */
+}
+
+
+
+@media screen and (min-width: 501px) and (max-width: 2199px) {
+    .RS_Movie_box,
+    .LS_Movie_box,
+    .Movie_box {
+        width: 468px;
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .Informasjon {
+        width: 100%;
+        height: 80px;
+        margin-top: 210px;
+    }
+
+    .Informasjon b {
+        font-size: 30px;
+    }
+
+    .LS_Movie_box:hover {
+        transform: scale(1.25) translate(50px);
+    }
+
+    .MPprev,
+    .MPnext {
+        top: 555px;
+        padding: 20px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .Act_prev,
+    .Act_next {
+        top: 970px;
+        padding: 20px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .Hits_Movie_box {
+        width: 1500px;
+        height: 800px;
+    }
+
+    .Hitsprev,
+    .Hitsnext {
+        top: 460px;
+        padding: 20px;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    /* Styles for screen widths of 2200px or wider */
+
+    .RS_Movie_box,
+    .LS_Movie_box,
+    .Movie_box {
+        width: 805px;
+        height: 400px;
+        margin-top: 10px;
+    }
+
+    .Informasjon {
+        width: 100%;
+        height: 100px;
+        margin-top: 290px;
+    }
+
+    .Informasjon b {
+        font-size: 30px;
+    }
+
+    .LS_Movie_box:hover {
+        transform: scale(1.25) translate(80px);
+    }
+
+    .MPprev,
+    .MPnext {
+        top: 610px;
+        padding: 20px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .Act_prev,
+    .Act_next {
+        top: 1110px;
+        padding: 20px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .Hits_Movie_box {
+        width: 1188px;
+        height: 800px;
+    }
+
+    .Hitsprev,
+    .Hitsnext {
+        top: 460px;
+        padding: 20px;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+
+}
+

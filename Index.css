@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Chartoon';
+    src: url(Resusjer/Fonts/Happy-Dance.ttf);
+}
+
+.Color1 {
+    background-color: var(--main-b1-color);
+}
+
+.Color2{
+    background-color: var(--main-b2-color);
+}
+
+
+
+.IndexBody {
+    background-image: url(Resusjer/Images/Loggin_Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.Register {
+    width: 200px;
+    height: 75px;
+    padding-top: 5%;
+}
+
+.Informasjon {
+    background-color: rgba(0, 67, 211, 0.589);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    padding: 3%;
+    border-radius: 25px
+}
+
+.UserName {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Chartoon', Courier, monospace, font-serif;
+    margin-left: 10px;
+}
+
+.Info_Buttons {
+    display: flex;
+    gap: 4%;
+    
+}
+
+.Button {
+    width: 110px;
+    height: 60px;
+    background-color: rgb(165, 207, 255);
+    border: solid 2px black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Button p {
+    font-size: 20px;
+    font-family: 'Chartoon', Courier, monospace, font-serif;
+}
+
+.Button:hover {
+    background-color: rgb(143, 195, 255);
+}
+.custom-textbox {
+    width: 200px;
+    height: 30px; 
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 2199px) {}
+
+@media screen and (min-width: 2200px) {
+
+    /* Styles for screen widths of 2200px or wider */
+    .Register {
+        width: 400px;
+        height: 75px;
+        padding-top: 5%;
+    }
+
+    .Button p {
+        font-size: 20px;
+        font-family: 'Chartoon', Courier, monospace, font-serif;
+    }
+
+    .Info_Buttons {
+        display: block;
+    }
+
+
+    .Button {
+        width: 200px;
+        height: 80px;
+
+    }
+
+    .Button p {
+        font-size: 28px;
+        font-family: 'Chartoon', Courier, monospace, font-serif;
+    }
+
+    .UserName {
+        font-size: 30px;
+    }
+
+}

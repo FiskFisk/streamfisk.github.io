@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'Chartoon';
+    src: url(Resusjer/Fonts/Happy-Dance.ttf);
+}
+
+.Color1 {
+    background-color: var(--main-b1-color);
+}
+
+.Color2{
+    background-color: var(--main-b2-color);
+}
+
+
+
+body {
+    margin: 4%;
+    /*overflow: hidden; /* Hide scrollbars */
+
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+
+
+    /*making in not avable to scroll to the side*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+/* Meny */
+.Meny {
+    display: flex;
+    justify-content: space-between;
+    /* Align items with space between */
+    align-items: center;
+    /* Center items vertically */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 5px black;
+
+}
+
+.Settings {
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 50%;
+    margin-right: 3.5%;
+    order: 3;
+    margin-left: auto;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.settings-box {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* Center vertically */
+    background-color: #000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 0.5%;
+}
+
+.settings-box button {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.Meny_Buttons {
+    order: 2;
+    display: flex;
+    gap: 20%;
+}
+
+.Meny_Button {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Logo {
+    width: 60px;
+    height: 50px;
+    order: 1;
+    margin-right: 5%;
+    background-image: url(Resusjer/Logos/BlueStream.svg);
+    margin-left: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Series_Logo {
+    width: 42px;
+    height: 30px;
+    background-image: url(Resusjer/Images/Series_Logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.Movie_Logo {
+    width: 35px;
+    height: 30px;
+    background-image: url(Resusjer/Images/Movie_Logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.Favorites_Logo {
+    width: 40px;
+    height: 30px;
+    background-image: url(Resusjer/Images/Favorites_Logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+
+.Meny_Button:hover {
+    .Series_Logo {
+        background-image: url(Resusjer/Images/Series_Logo_Blue_Dark.svg);
+    }
+
+    .Movie_Logo {
+        background-image: url(Resusjer/Images/Movie_Logo_Blue_Dark.svg);
+    }
+
+    .Favorites_Logo {
+        background-image: url(Resusjer/Images/Favorites_Logo_Blue_Dark.svg);
+    }
+
+    .Logo_Text {
+        color: #819dd4;
+    }
+}
+
+
+.Logo_Text {
+    margin-left: 5%;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+    font-family: 'Chartoon', Courier, monospace, font-serif;
+}
+
+
+
+/* Film og serie forsite bilder */
+
+.Movie_Image {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+
+
+.ImageBox::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    /*ender opacity som*/
+    pointer-events: none;
+    /* Ensure the gradient does not intercept mouse events */
+}
+
+
+.ImageBox {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (min-width: 501px) and (max-width: 2199px) {
+
+    /* When screen is 1000px or wider */
+    .ImageBox {
+        height: 1000px;
+    }
+
+    .Settings {
+        width: 60px;
+        height: 60px;
+        margin-right: 2.5%;
+    }
+
+    .Logo {
+        width: 90px;
+        height: 78px;
+    }
+
+    .Logo_Text {
+        font-size: 40px;
+    }
+
+    .Series_Logo {
+        width: 58px;
+        height: 40px;
+
+        margin-top: 38px;
+    }
+
+    .Movie_Logo {
+        width: 58px;
+        height: 52px;
+
+        margin-top: 30px;
+    }
+
+    .Favorites_Logo {
+        width: 65px;
+        height: 50px;
+
+        margin-top: 30px;
+    }
+
+    .settings-box button {
+        display: block;
+        margin-bottom: 5px;
+        padding: 10px 10px;
+        background: none;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    } 
+}
+
+@media screen and (min-width: 2200px) {
+
+    /* When screen is 1000px or wider */
+    .ImageBox {
+        height: 1000px;
+    }
+
+    .Settings {
+        width: 75px;
+        height: 75px;
+        margin-right: 1%;
+    }
+
+    .Logo {
+        width: 90px;
+        height: 78px;
+    }
+
+    .Logo_Text {
+        font-size: 40px;
+    }
+
+    .Series_Logo {
+        width: 58px;
+        height: 40px;
+
+        margin-top: 38px;
+    }
+
+    .Movie_Logo {
+        width: 58px;
+        height: 52px;
+
+        margin-top: 30px;
+    }
+
+    .Favorites_Logo {
+        width: 65px;
+        height: 50px;
+
+        margin-top: 30px;
+    }
+
+    .settings-box button {
+        display: block;
+        margin-bottom: 5px;
+        padding: 10px 10px;
+        background: none;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+
+
+.MEPHIS_Way {
+    background-image: url(Resusjer/SlideShowImages/MEMPHIS_Way.png);
+}
+
+
+.U_Sving {
+    background-image: url(Resusjer/SlideShowImages/U_Sving.png);
+}
+
+.Trist {
+    background-image: url(Resusjer/SlideShowImages/Trist.png);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Side Meny (SM)*/
+
+
+.Logo_C {
+    display: flex;
+}
+
+.SM_Logo {
+    margin-top: 40px;
+    width: 60px;
+    height: 60px;
+    background-image: url(Resusjer/Logos/BlueStream.svg);
+    background-repeat: no-repeat, repeat;
+}
+
+.SM_Logo_Text {
+    font-size: 40px;
+}
+
+#sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /*SM Text Logo Colour*/
+    color: white;
+    border-right: 5px solid black;
+
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+:sideMenu::-webkit-scrollbar {
+    display: none;
+}
+
+#sideMenu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sideMenu a:hover {
+    color: #f1f1f1;
+}
+
+#menuToggle {
+    position: fixed;
+    top: 2.5%;
+    left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+    color: white;
+    background-color: #000d36;
+    padding: 1.5%;
+    border-radius: 10px;
+    border: solid white 2px;
+}
+
+@media screen and (min-width: 900px) {
+    #menuToggle {
+        font-size: 30px;
+        padding: 0.5%;
+    }
+}
+
+
+.Buttons {
+    width: 80%;
+    height: 60px;
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.Search_Buttons {
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+
+}
+
+.Search_Buttons_Group {
+    transition: 1s;
+}
+
+.SM_Menu {
+    margin-left: 10%;
+}
+
+@media screen and (min-width: 501px) and (max-width: 2199px) {
+    #menuToggle {
+        padding: 0.5%;
+    }
+
+    .SM_Logo {
+        margin-top: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .SM_Logo_Text {
+        font-size: 40px;
+        margin-top: 90px;
+    }
+
+    .Buttons {
+        width: 80%;
+        height: 60px;
+    }
+
+    .Buttons p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    #menuToggle {
+        padding: 0.5%;
+    }
+
+    .SM_Logo {
+        margin-top: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .SM_Logo_Text {
+        font-size: 50px;
+        margin-top: 90px;
+    }
+
+    .Buttons {
+        width: 80%;
+        height: 80px;
+    }
+
+    .Buttons p {
+        font-size: 25px;
+    }
+
+}
